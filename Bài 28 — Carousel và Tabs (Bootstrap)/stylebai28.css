@@ -1,0 +1,59 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.carousel-item img {
+    height: 340px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 20px;
+}
+
+.carousel-caption p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.noi-dung-tab {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.nav-pills .nav-link {
+    color: #0d6efd;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .carousel-item img {
+        height: 220px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 16px;
+    }
+}

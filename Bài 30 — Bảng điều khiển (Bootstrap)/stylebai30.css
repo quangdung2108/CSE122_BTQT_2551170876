@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+}
+
+.dashboard {
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 230px;
+    min-width: 230px;
+    background-color: #212529;
+    padding: 15px 10px;
+}
+
+.sidebar h5 {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: #adb5bd;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.noi-dung {
+    min-width: 0;
+}
+
+.noi-dung h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-body p {
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.card-body h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.progress {
+    height: 6px;
+}
+
+.list-group-item {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+}

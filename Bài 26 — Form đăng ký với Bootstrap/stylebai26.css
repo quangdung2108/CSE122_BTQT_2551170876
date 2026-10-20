@@ -1,0 +1,47 @@
+
+body {
+    background-color: #e9ecef;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #198754;
+}
+
+.card-header h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    padding: 10px 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+}
+
+@media (max-width: 576px) {
+    .card-header h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 - Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="stylebai17.css">
+</head>
+
+<body>
+
+    <div class="khung-dang-ky">
+
+        <h1>Đăng ký tài khoản</h1>
+
+        <p class="mo-ta">
+            Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.
+        </p>
+
+        <form id="formDangKy" novalidate>
+
+            <div class="nhom-nhap">
+                <label for="hoTen">Họ và tên</label>
+
+                <input type="text" id="hoTen"
+                       value="Nguyễn Văn An">
+
+                <small id="loiHoTen"></small>
+            </div>
+
+            <div class="nhom-nhap">
+                <label for="email">Email</label>
+
+                <input type="text" id="email"
+                       value="an.nv@">
+
+                <small id="loiEmail"></small>
+            </div>
+
+            <div class="nhom-nhap">
+                <label for="matKhau">Mật khẩu</label>
+
+                <input type="password" id="matKhau"
+                       value="123">
+
+                <small id="loiMatKhau"></small>
+            </div>
+
+            <div class="nhom-nhap">
+                <label for="xacNhan">Xác nhận mật khẩu</label>
+
+                <input type="password" id="xacNhan"
+                       value="123456">
+
+                <small id="loiXacNhan"></small>
+            </div>
+
+            <button type="submit" id="btnDangKy">
+                Đăng ký
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="scriptbai17.js"></script>
+
+</body>
+</html>

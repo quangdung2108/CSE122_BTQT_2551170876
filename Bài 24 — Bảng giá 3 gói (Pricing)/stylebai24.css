@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f1f5ff;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.bang-gia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.goi {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px #ddd;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.goi:hover {
+    transform: translateY(-8px);
+}
+
+.nhan {
+    background: #eef2ff;
+    color: #4338ca;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.goi h2 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.gia {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.gia small {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.goi ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.goi li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.goi button {
+    width: 100%;
+    padding: 12px;
+    margin-top: auto;
+    border: none;
+    border-radius: 8px;
+    background: #f1f5f9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.goi.hot {
+    border: 2px solid #4f46e5;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px #b8b5ff;
+}
+
+.goi.hot:hover {
+    transform: translateY(-15px);
+}
+
+.goi .nut-hot {
+    background: #4f46e5;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bang-gia {
+        grid-template-columns: 1fr;
+    }
+
+    .goi.hot,
+    .goi.hot:hover {
+        transform: none;
+    }
+}
