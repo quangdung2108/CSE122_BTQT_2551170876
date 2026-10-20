@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    min-height: 550px;
+}
+
+.banner {
+    height: 70px;
+    background-color: #C62828;
+    background-image: url("/imgs/Nen_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.bo-cuc {
+    display: grid;
+    grid-template-columns: 200px 1fr 160px;
+    min-height: 480px;
+}
+
+.menu {
+    background: linear-gradient(#C62828, #8E0000);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #ffffff33;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    background-color: #8E0000;
+}
+
+.noi-dung {
+    background-color: white;
+    padding: 20px;
+    min-width: 0;
+}
+
+.noi-dung h2 {
+    color: #C62828;
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.menu-con {
+    background-color: #FFE082;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-con a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-con a:hover {
+    color: #C62828;
+}
+
+.hop-noi-dung {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.can-giua {
+    text-align: center;
+}
+
+.quang-cao {
+    padding: 15px;
+    background-color: white;
+}
+
+.quang-cao img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,27 @@
+body{
+    margin :0;
+    background-color: #ffffff;
+}
+.khungbai{
+    width : 720px;
+    margin :20px auto;
+    padding : 20px;
+    background: linear-gradient(to right,#c9a227,#a8861b);
+    overflow: hidden;
+}
+header{
+    text-align: center;
+    color:#ffffff;
+    text-shadow: 2px 2px 3px #555;
+}
+img{
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+    border : 2px solid #ffffff;
+}
+p{
+    text-align: justify;
+    color:#ffffff;
+    line-height: 1.5;
+}

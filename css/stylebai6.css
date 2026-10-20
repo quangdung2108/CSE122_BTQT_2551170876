@@ -1,0 +1,35 @@
+body{
+    background-color: #faf3dc;
+}
+h1{
+    color: #e65100;
+    text-align: center;
+}
+.khung{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+table{
+    width: 500px;
+    border-collapse: collapse;
+    background-color: white;
+}
+th{
+    background-color: #e65100;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+td{
+    padding: 10px;
+    border-bottom: 1px solid #E0D6c2;
+}
+th:first-child, td:first-child{
+    width: 60px;
+    text-align: center;
+}
+tr:nth-child(even) td{
+    background-color: #FDF8ef;
+}

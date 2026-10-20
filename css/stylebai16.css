@@ -1,0 +1,178 @@
+
+/* Thiết lập trang web */
+body {
+    margin: 0;
+    padding: 12px 6px;
+    background-color: #f3f4f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Khung ứng dụng */
+.ung-dung {
+    width: 730px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Phần tiêu đề */
+header {
+    background-color: #6d28d9;
+    color: #FFFFFF;
+    padding: 20px 30px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0 0 6px;
+}
+
+header p {
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Khu vực nhập công việc */
+.form-nhap {
+    display: flex;
+    gap: 12px;
+    padding: 22px 30px;
+    border-bottom: 1px solid #eeeeff;
+}
+
+/* Ô nhập */
+#congViec {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 16px;
+    border: 1px solid #dddded;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#congViec:focus {
+    border-color: #6d28d9;
+}
+
+/* Nút thêm */
+#btnThem {
+    background-color: #6d28d9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnThem:hover {
+    background-color: #5b21b6;
+}
+
+/* Danh sách công việc */
+#danhSach {
+    list-style: none;
+    margin: 0;
+    padding: 10px 30px;
+}
+
+/* Mỗi công việc */
+#danhSach li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 0;
+    border-bottom: 1px dashed #ede9fe;
+}
+
+/* Phần ô chọn và tên công việc */
+#danhSach label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Ô đánh dấu */
+#danhSach input[type="checkbox"] {
+    appearance: none;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    border: 2px solid #a78bfa;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Khi công việc hoàn thành */
+#danhSach input[type="checkbox"]:checked {
+    background-color: #6d28d9;
+    border-color: #6d28d9;
+}
+
+/* Tên công việc */
+#danhSach span {
+    font-size: 16px;
+    color: #111111;
+    overflow-wrap: anywhere;
+}
+
+/* Gạch ngang công việc hoàn thành */
+#danhSach li.hoan-thanh span {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* Nút xóa */
+.btn-xoa {
+    background-color: #fde2e2;
+    color: #b91c1c;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-xoa:hover {
+    background-color: #fecaca;
+}
+
+/* Bộ đếm công việc */
+.thong-ke {
+    padding: 24px 30px;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Giao diện trên điện thoại */
+@media (max-width: 480px) {
+    .form-nhap {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    #btnThem {
+        padding: 12px 16px;
+    }
+
+    #danhSach {
+        padding: 10px 16px;
+    }
+
+    header {
+        padding: 20px 16px;
+    }
+
+    .thong-ke {
+        padding: 20px 16px;
+    }
+}

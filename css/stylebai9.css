@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font: 14px Arial;
+    background: #eef3f7;
+}
+.khung{
+    width: 680px;
+    margin:24px auto;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px#ccc;
+}
+.trai{
+    width: 220px;
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(#1565c0,#0d3f7a);
+}
+.avatar{
+    width: 88px;
+    height: 88px;
+    margin: auto;
+    padding-top:25px ;
+    border-radius: 50%;
+    background: white;
+    color: #1565c0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.trai h2{
+    font-size: 16px;
+}
+.trai p {
+    font-size: 11px;
+    text-align: left;
+}
+.phai{
+    flex: 1;
+    padding: 15px 24px;
+}
+h3{
+    margin: 5px 0 8px;
+    color: #1565c0;
+    border-bottom: 2px solid #e3e8ed;
+    padding-bottom: 4px;
+}
+.phai p{
+    font-size: 12px;
+    line-height: 1.5;
+}
+span{
+    display: inline-block;
+    padding: 4px 12px;
+    margin:2px;
+    border-radius: 15px;
+    background: #e3f0ff;
+    color: #0d3f7a;
+    font-size: 11px;
+}
+a{
+    color: #1565c0;
+}

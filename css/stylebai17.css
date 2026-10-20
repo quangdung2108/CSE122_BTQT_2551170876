@@ -1,0 +1,120 @@
+
+/* Thiết lập trang web */
+body {
+    margin: 0;
+    padding: 6px 8px;
+    background-color: #fff7ed;
+    font-family: Arial, sans-serif;
+}
+
+/* Khung đăng ký */
+.khung-dang-ky {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 28px 30px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+}
+
+/* Tiêu đề */
+h1 {
+    color: #c2410c;
+    font-size: 24px;
+    margin: 0 0 5px;
+}
+
+/* Mô tả */
+.mo-ta {
+    color: #6b7280;
+    font-size: 15px;
+    margin: 0 0 22px;
+}
+
+/* Nhóm nhập liệu */
+.nhom-nhap {
+    margin-bottom: 18px;
+}
+
+/* Nhãn */
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 7px;
+}
+
+/* Ô nhập */
+.nhom-nhap input {
+    width: 100%;
+    height: 46px;
+    box-sizing: border-box;
+
+    border: 2px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+
+    padding: 0 14px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+}
+
+/* Ô nhập hợp lệ */
+.nhom-nhap input.hop-le {
+    border-color: #16a34a;
+}
+
+/* Ô nhập không hợp lệ */
+.nhom-nhap input.khong-hop-le {
+    border-color: #dc2626;
+    background-color: #fff5f5;
+}
+
+/* Dòng thông báo */
+.nhom-nhap small {
+    display: block;
+    font-size: 14px;
+    margin-top: 7px;
+    min-height: 16px;
+}
+
+/* Thông báo hợp lệ */
+.thong-bao-dung {
+    color: #16a34a;
+}
+
+/* Thông báo lỗi */
+.thong-bao-loi {
+    color: #dc2626;
+}
+
+/* Nút đăng ký */
+#btnDangKy {
+    width: 100%;
+    height: 46px;
+
+    margin-top: 6px;
+    border: none;
+    border-radius: 9px;
+
+    background-color: #c2410c;
+    color: #FFFFFF;
+
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hiệu ứng khi đưa chuột */
+#btnDangKy:hover {
+    background-color: #9a3412;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 480px) {
+    .khung-dang-ky {
+        padding: 22px 18px;
+    }
+}

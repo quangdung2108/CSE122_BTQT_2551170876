@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 80%;
+    max-width: 1000px;
+    min-width: 600px;
+    margin:0 auto;
+    padding: 10px 20px;
+}
+h1{
+    color: #c2185b;
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0 18px;
+}
+.noidung{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+.trai{
+    width: 35%;
+    text-align: center;
+}
+.trai img{
+    width: 70%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.phai{
+    width: 65%;
+    padding-left: 10px;
+}
+h2{
+    display: inline-block;
+    background-color: #ffc0cb;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin: 0 0 10px 0;
+}
+.gioithieu{
+    list-style-type: square;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-left: 22px;
+}
+.gioithieu li{
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.lienhe{
+    list-style-type: circle;
+    margin-top: 0;
+    padding-left: 22px;
+}
+.lienhe li{
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.link{
+    width: 65%;
+    margin-left: 35%;
+    margin-top: 20px;
+    text-align: center;
+}
+.link a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #0000EE;
+    text-decoration: underline;
+}

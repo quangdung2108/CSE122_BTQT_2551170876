@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    padding: 20px;
+    background-color: #111518;
+    text-align: center;
+}
+
+/* Khung ảnh */
+.khung-anh {
+    display: inline-block;
+    min-width: 390px;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #1c2226;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Ảnh hoa hồng */
+#hoaHong {
+    display: block;
+    max-width: 100%;
+    max-height: 280px;
+    margin: auto;
+    filter: grayscale(1);
+    transition: 0.4s;
+}
+
+/* Dòng chữ */
+.dong-chu {
+    margin-top: 15px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #d4af37;
+    background: linear-gradient(
+        90deg,
+        #ffd700,
+        #fff4b0,
+        #b8860b
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Thanh nút */
+.thanh-nut {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+}
+
+/* Các nút */
+button {
+    background-color: #232b30;
+    color: #ffffff;
+    border: 1px solid #354047;
+    border-radius: 7px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hiệu ứng khi rê chuột */
+button:hover {
+    background-color: #3b4650;
+}
+
+/* Nút được chọn */
+button.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Các hiệu ứng ảnh */
+.gray {
+    filter: grayscale(1);
+}
+
+.xray {
+    filter: grayscale(1) invert(1);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.fliph {
+    transform: scaleX(-1);
+}
+
+.flipv {
+    transform: scaleY(-1);
+}
+
+.glow {
+    filter: drop-shadow(0 0 12px #ffd700);
+}
+
+.shadow {
+    filter: drop-shadow(5px 5px 5px #555);
+}
+
+.boldshadow {
+    filter: drop-shadow(8px 8px 3px #000);
+}
+
+.dropshadow {
+    filter: drop-shadow(12px 12px 8px #888);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.wave {
+    filter: url(#wave);
+}
+
+.mask {
+    mask-image: radial-gradient(
+        circle,
+        black 45%,
+        transparent 75%
+    );
+}
+
+.alpha {
+    opacity: 0.4;
+}

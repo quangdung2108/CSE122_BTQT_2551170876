@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 2px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.baiviet{
+    background-color: #fffaf2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #cccccc ;
+}
+.tieude h1{
+    color: #e65100;
+    font-size: 36px;
+    margin: 0;
+}
+.tieude h2{
+    color: #e65100;
+    font-size: 20px;
+    margin: 5px 0 20px;
+}
+.noidung{
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.doandau::first-letter{
+    color: #e65100;
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 5px;
+}
+.anhhoa{
+    float: right;
+    width: 35%;
+    margin: 0 0 15px 20px;
+}
+.anhhoa img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.anhhoa img:hover{
+    transform: scale(1.05);
+}
+.huongvi{
+    clear: both;
+    border: 2px solid #2e7d32;
+    background-color: #f4fbf4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+}
+.huongvi h3{
+    color: #2e7d32;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 0;
+}
+.danhsach{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 30px;
+    padding-left: 25px;
+}
+.danhsach li{
+    transition: 0.3s;
+}
+.danhsach li:hover{
+    color: #e65100;
+    transform: translateX(5px);
+}

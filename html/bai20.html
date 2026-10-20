@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 - Hiệu ứng ảnh</title>
+    <link rel="stylesheet" href="/css/stylebai20.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="khung-anh">
+
+            <img id="hoaHong"
+                 src="/imgs/hoahong.gif"
+                 alt="Hoa hồng">
+
+            <div class="dong-chu">
+                Special For You
+            </div>
+
+        </div>
+
+        <div class="thanh-nut">
+
+            <button class="active" onclick="doiHieuUng('gray', this)">Gray</button>
+            <button onclick="doiHieuUng('xray', this)">Xray</button>
+            <button onclick="doiHieuUng('invert', this)">Invert</button>
+            <button onclick="doiHieuUng('fliph', this)">FlipH</button>
+            <button onclick="doiHieuUng('flipv', this)">FlipV</button>
+            <button onclick="doiHieuUng('glow', this)">Glow</button>
+            <button onclick="doiHieuUng('shadow', this)">Shadow</button>
+            <button onclick="doiHieuUng('boldshadow', this)">Bold Shadow</button>
+            <button onclick="doiHieuUng('dropshadow', this)">DropShadow</button>
+            <button onclick="doiHieuUng('blur', this)">Blur</button>
+            <button onclick="doiHieuUng('wave', this)">Wave</button>
+            <button onclick="doiHieuUng('mask', this)">Mask</button>
+            <button onclick="doiHieuUng('alpha', this)">Alpha</button>
+
+        </div>
+
+    </div>
+
+    <svg width="0" height="0">
+        <filter id="wave">
+            <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="2"
+                result="song">
+            </feTurbulence>
+
+            <feDisplacementMap
+                in="SourceGraphic"
+                in2="song"
+                scale="18">
+            </feDisplacementMap>
+        </filter>
+    </svg>
+
+    <script src="/java/scriptbai20.js"></script>
+
+</body>
+</html>

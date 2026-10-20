@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.container{
+    width: 700px;
+    margin: auto;
+    border: 1px solid #eee;
+}
+.tieude{
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.tieude2{
+    background-color: #fbe3e8;
+    color: #c8102e;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+.noidung{
+    min-height: 415px;
+    padding: 15px;
+}
+.cotphai{
+    width: 50%;
+    float: right;
+    border-left: 1px solid#ddd;
+    padding-left: 18px;
+    min-height: 235px;
+}
+.cottrai{
+    width: 50%;
+    float: left;
+    padding-right: 18px;
+    margin-top: 250px;
+}
+.cotphai img{
+    width: 145px;
+    height: 183px;
+    object-fit: cover;
+    float: right;
+    margin-left: 10px;
+}
+h3{
+    color: #c8102e;
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+ul{
+    margin: 0 0 10px;
+    padding-left: 18px;
+}
+li{
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+.cotphai h3:nth-of-type(2){
+    clear:none;
+}

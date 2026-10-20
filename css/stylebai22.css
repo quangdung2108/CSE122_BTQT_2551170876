@@ -1,0 +1,77 @@
+:root{
+    --nen:#ffffff;
+    --chu:#1f2937;
+    --the:#f3f4f6;
+    --vien:#d1d5db;
+    --nhan:#2563eb;
+}
+body.toi{
+    --nen:#0f172a;
+    --chu:#e2e8f0;
+    --the:#1e293b;
+    --vien:#334155;
+    --nhan:#60a5fa;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 18px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--nen);
+    color: var(--chu);
+    transition: backgroud-color 0.4s, color 0.4s;
+}
+.container{
+    max-width: 800px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 24px;
+    margin: 0;
+}
+.congtac{
+    position: relative;
+    width: 55px;
+    height: 28px;
+    display: inline-block;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.nutgat{
+    position:absolute;
+    inset: 0;
+    background-color: #9ca3af;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.nutgat::before{
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 4px;
+    top: 3.5px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.congtac input:checked + .nutgat{
+    background-color: #60a5fa;
+}
+.congtac input:checked + .nutgat::before{
+    transform: translateX(26px);
+}
+footer{
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.7;
+}

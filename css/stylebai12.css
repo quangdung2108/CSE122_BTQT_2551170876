@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 7px 12px;
+    background-color: #f3f3f3;
+    background-image: url("/imgs/Nen.gif");
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+}
+.khung-lich {
+    width: 556px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 26px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.o-lich {
+    height: 176px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box;
+}
+#hienThiNam {
+    color: #C62828;
+    font-size: 18px;
+    font-weight: bold;
+}
+#hienThiThang {
+    color: #1565C0;
+    font-size: 23px;
+    font-weight: bold;
+}
+#hienThiNgay {
+    color: #C62828;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 10px 0 0;
+}
+#hienThiThu {
+    color: #1565C0;
+    font-size: 23px;
+    font-weight: bold;
+}
+.loi-chao {
+    text-align: center;
+    color: #C62828;
+    font-size: 22px;
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+    margin: 17px 0;
+}
+.form-nhap {
+    min-height: 96px;
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 12px 15px;
+}
+.nhom-nhap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.nhom-nhap label {
+    font-size: 17px;
+    color: #000000;
+}
+.nhom-nhap input {
+    width: 84px;
+    height: 33px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+#btnInLich {
+    width: 72px;
+    height: 55px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #546E7A;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+#btnInLich:hover {
+    background-color: #37474F;
+}
+@media (max-width: 480px) {
+    .khung-lich {
+        padding: 15px;
+    }
+    .form-nhap {
+        padding: 10px 5px;
+        gap: 5px;
+    }
+    .nhom-nhap input {
+        width: 65px;
+    }
+    #btnInLich {
+        width: 60px;
+    }
+}

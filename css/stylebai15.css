@@ -1,0 +1,139 @@
+
+/* Trang web */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
+/* Vỏ máy tính */
+.may-tinh {
+    width: 510px;
+    max-width: 100%;
+    padding: 25px 26px 28px;
+    box-sizing: border-box;
+
+    background-color: #111827;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Màn hình hiển thị */
+.man-hinh {
+    height: 127px;
+    background-color: #022c22;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 19px;
+}
+
+/* Phép tính phía trên */
+#phepTinh {
+    color: #188653;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: right;
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Kết quả phía dưới */
+#ketQua {
+    color: #4ade80;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: right;
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+/* Bàn phím 4 cột */
+.ban-phim {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Nút số */
+button {
+    height: 67px;
+    border: none;
+    border-radius: 12px;
+
+    background-color: #25313f;
+    color: #e5e7eb;
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Nút phép tính */
+.nut-xanh {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* Nút C */
+.nut-c {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+/* Nút bằng */
+.nut-bang {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+/* Nút số 0 chiếm 2 cột */
+.so-khong {
+    grid-column: span 2;
+}
+
+/* Hiệu ứng khi đưa chuột */
+button:hover {
+    filter: brightness(1.15);
+}
+
+/* Hiệu ứng khi nhấn */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Hiển thị trên màn hình nhỏ */
+@media (max-width: 540px) {
+    body {
+        padding: 10px;
+    }
+
+    .may-tinh {
+        padding: 20px 15px;
+    }
+
+    button {
+        height: 60px;
+    }
+
+    #ketQua {
+        font-size: 38px;
+    }
+}
